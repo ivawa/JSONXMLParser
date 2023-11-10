@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../font/Nunito-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+html {
+    font-family: "Nunito Sans";
+}
+
+.container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    margin-inline: 20px;
+    align-items: center;
+    height: 94vh;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 10px;
+}
+.jsonmenu {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    height: 20px;
+    margin-inline: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+.pad {
+    background-color: #bdbdbd;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    border-inline: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    gap: 9px;
+    border-radius: 10px 10px 0px 0px;
+}
+.pad1 {
+    background-color: #bdbdbd;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    margin-inline: 5px;
+    border-inline: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.area {
+    height: 100%;
+    align-items: flex-start;
+    padding: 10px;
+    overflow: scroll;
+    border: black solid;
+    resize: none;
+    outline: none;
+    font-family: monospace;
+    transition: background 0.1s, color 0.1s;
+    border: 1px solid black;
+}
+
+.area:hover, .area:focus {
+    background: #eeeeee;
+}
+
+body {
+    margin: 0;
+}
+
+.controls__button {
+    padding: 8px 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #009578;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Nunito Sans";
+}
+
+
+.controls__button:hover {
+    background: #037e64;
+}
+.controls__button:active {
+    background: #005d4a;
+}
+
+
+.header {
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    font-size: 1.3em;
+    overflow: hidden;
+    padding: 10px 10px 10px 25px;
+}
+
+.head {
+    display: inline-block;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.open-button {
+    background-color: #2196F3;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    border: 1px solid #009578;
+    z-index: 9;
+
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.form-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #1976D2;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-container .cancel {
+    background-color: #448AFF;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+
+#test {
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+}
+
+#input {
+    font-family: "Nunito Sans";
+}
+
+texta1rea {
+    outline: 0px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+}
+
+.string {
+    color: green;
+}
+
+.number {
+    color: #655454;
+}
+
+.boolean {
+    color: blue;
+}
+
+.null {
+    color: magenta;
+}
+
+.key {
+    color: #1a68ff;
+}
+
+/*Выделение JSON объектов*/
+.parse {
+    padding: 1px;
+}
+.parse:hover {
+    color: #6c006c;
+    background-color: #d3d3d3;
+    padding: 1px;
+    border-radius: 4px;
+    box-sizing:border-box;
+}
+
+/*Картинка корзины*/
+.divimage {
+    cursor: pointer;
+}
+.divimage:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+/*Кнопка "Пример"*/
+.exmpl{
+    background-color: transparent;
+    font-family: "Nunito Sans";
+    color: black;
+    cursor: pointer;
+    border: 0px;
+ }
+.exmpl:hover{
+    background-color: transparent;
+    font-family: "Nunito Sans";
+    color: #6c006c;
+    cursor: pointer;
+    border: 0px;
+}
+
+
+
+
