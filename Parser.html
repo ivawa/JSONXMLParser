@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON/XML Парсер</title>
+    <meta name="author" content="Лагунов И.В. и Ахмазов А.А. гр. 406">
+    <link rel="stylesheet" href="src/main.css">
+    <script src="src/main.js" defer></script>
+    <link rel=”icon” href=”/favicon.ico” type=”image/x-icon”>
+</head>
+<body>
+<div class="header">
+    <div class="head">JSON/XML Парсер</div>
+    <select style="visibility:hidden;">
+        <option value="1">JSON</option>
+        <option value="2">XML</option>
+    </select>
+</div>
+<div class="jsonmenu">
+    <div class="pad">
+        <div type= "button" onclick= "clearInput()"><img src="http://s1.iconbird.com/ico/2013/9/452/w448h5121380477116trash.png" class="divimage" alt="" width="20px" height="20px"></div>
+        <div type="button" onclick="paste(inputArea)"><img src="https://www.freeiconspng.com/uploads/copy-icon--3.png" class="divimage" alt="" width="20px" height="20px"></div>
+        <button onclick="example(inputArea)" class="exmpl">Пример</button>
+    </div>
+    <div></div>
+    <div class="pad1"></div>
+</div>
+
+<div class="container">
+
+    <textarea type="text" height="pixels" class="area area-input" id="areaput" placeholder="Введите JSON..."></textarea>
+    <div class="controls">
+        <select class="controls__button" id ="selection">
+            <option value="XML">XML</option>
+            <option value="JSON">JSON</option>
+        </select>
+        <button type="button" class="controls__button controls__button--format">Формат</button>
+        <button type="button" class="controls__button controls__button--minify">Minify</button>
+        <button class="controls__button" id="test">Ссылка</button>
+        <div class="form-popup" id="menu">
+            <form action="#" class="form-container" id="placeholder">
+                <input id="area-URL" type="text" placeholder="Введите URL" name="name" type="button" required>
+                <button type="button" class="controls__button" id="controls__button--url" onclick="getButton()">
+                    Применить
+                </button>
+            </form>
+        </div>
+        <button type="button" class="controls__button" onclick="openFile()">Файл</button>
+    </div>
+    <texta1rea readonly class="area area-output" id="output1"></texta1rea>
+</div>
+<input id="inp" type='file' accept=".txt, .json, .xml" style="visibility:hidden;" onchange="readFile(event) " />
+</body>
+</html>
